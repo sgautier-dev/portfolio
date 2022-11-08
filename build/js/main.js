@@ -12,5 +12,13 @@ const initApp = () => {
     mobileMenu.addEventListener('click', toggleMenu)
 }
 
-document.addEventListener('DOMContentLoaded', initApp)
+const displayCurrentYear = () => {
+    const yearSpan = document.getElementById('year')
+    const today = new Date()
+    const year = today.getFullYear()
 
+    yearSpan.innerText = year
+}
+
+document.addEventListener('DOMContentLoaded', initApp)
+document.addEventListener('DOMContentLoaded', displayCurrentYear)
