@@ -16,16 +16,16 @@
     <header class="sticky top-0 z-10 bg-sky-800 text-white">
         <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
             <h1 class="text-2xl font-medium sm:text-3xl">
-                <a href="#hero">🚀 Sébastien Gautier</a>
+                <a href="#hero"><img class="w-10 rounded-full border border-solid border-slate-900 bg-white dark:border-gray-100 inline-block" src="./img/profilSeb-300x300.png" alt="sébastien gautier profil" width="300" height="300" /> Sébastien Gautier</a>
             </h1>
             <div>
-                <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+                <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl lg:hidden">
                     <!-- &#9776; -->
                     <div
                         class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
                     </div>
                 </button>
-                <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+                <nav class="hidden space-x-8 text-xl lg:block" aria-label="main">
                     <a href="#skills" class="hover:opacity-90">Compétences</a>
                     <a href="#projets" class="hover:opacity-90">Projets</a>
                     <a href="#testimonials" class="hover:opacity-90">Références</a>
@@ -72,7 +72,7 @@
                     les relations de confiance!
                 </p>
             </article>
-            <img class="w-1/2 animate-bounce-image" src="./img/rocketdab.png" alt="rocket dab" />
+            <img class="w-1/2 animate-bounce-image" src="./img/rocketdab.png" alt="rocket dab" width="400" height="400" />
         </section>
 
         <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
@@ -156,7 +156,7 @@
                 <li
                     class="rounded-3xl border border-solid border-slate-900 bg-white py-4 px-4 shadow-xl dark:border-gray-100 dark:bg-black">
                     <h3 class="text-center text-2xl text-slate-900 dark:text-white sm:text-4xl">
-                        Postgre
+                        PostgreSQL
                     </h3>
                 </li>
 
@@ -181,7 +181,7 @@
             <ul class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
                 <li
                     class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black hover:animate-pulse sm:w-5/6 cursor-pointer">
-                    <img src="./img/rocketman.png" alt="Projet 1" class="mb-6 w-1/2" />
+                    <img src="./img/rocketman.png" alt="Projet 1" class="mb-6 w-1/2" width="400" height="400" loading="lazy" />
                     <h3 class="text-center text-2xl text-slate-900 dark:text-white sm:text-4xl">
                         Projet 1
                     </h3>
@@ -194,7 +194,7 @@
                 </li>
                 <li
                     class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 hover:animate-pulse cursor-pointer">
-                    <img src="./img/rocketride.png" alt="Projet 2" class="mb-6 w-1/2" />
+                    <img src="./img/rocketride.png" alt="Projet 2" class="mb-6 w-1/2" width="400" height="400" loading="lazy"/>
                     <h3 class="text-center text-2xl text-slate-900 dark:text-white sm:text-4xl">
                         Projet 2
                     </h3>
@@ -207,7 +207,7 @@
                 </li>
                 <li
                     class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 hover:animate-pulse cursor-pointer">
-                    <img src="./img/rocketlaunch.png" alt="Projet 3" class="mb-6 w-1/2" />
+                    <img src="./img/rocketlaunch.png" alt="Projet 3" class="mb-6 w-1/2" width="400" height="400" loading="lazy" />
                     <h3 class="text-center text-2xl text-slate-900 dark:text-white sm:text-4xl">
                         Projet 3
                     </h3>
@@ -290,7 +290,7 @@
                 <input type="text" id="subject" required minlength="3" maxlength="60" placeholder="Sujet du message"
                     class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
                 <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" required
+                <textarea name="message" id="message" cols="30" rows="8" placeholder="Votre message" required
                     class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
                 <button
                     class="w-48 rounded-xl border border-solid border-slate-900 bg-sky-800 p-3 text-white hover:bg-sky-700 active:bg-sky-500 dark:border-none">
