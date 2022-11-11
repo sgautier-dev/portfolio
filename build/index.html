@@ -23,9 +23,9 @@
             <div>
                 <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl lg:hidden" aria-label="bouton menu">
                     <!-- &#9776; -->
-                    <div
-                        class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
-                    </div>
+                    <span
+                        class="absolute top-4 right-0 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+                    </span>
                 </button>
                 <nav class="hidden space-x-8 text-xl lg:block" aria-label="menu desktop">
                     <a href="#skills" class="hover:opacity-90">Compétences</a>
@@ -35,7 +35,7 @@
                 </nav>
             </div>
         </section>
-        <section id="mobile-menu"
+        <div id="mobile-menu"
             class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-4xl">
             <!-- <button class="text-7xl self-end px-6">
                 &times;
@@ -48,30 +48,30 @@
                 <a href="#contact" class="w-full py-6 text-center hover:opacity-70">Contact</a>
                 <a href="#footer" class="w-full py-6 text-center hover:opacity-70">Infos</a>
             </nav>
-        </section>
+        </div>
     </header>
     <main class="mx-auto max-w-4xl">
         <section id="hero"
             class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-3 sm:flex-row md:p-6">
-            <article class="sm:w-1/2">
+            <div class="sm:w-1/2">
                 <h2
                     class="max-w-md text-center text-3xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl">
                     <span class="text-purple-800 dark:text-purple-300">Développeur web humaniste</span>
                     dédié à l'excellence et aux relations de
                     confiance!
                 </h2>
-                <p class="mt-4 max-w-md text-left text-2xl text-slate-700 dark:text-slate-400 sm:text-left">
+                <p class="mt-4 max-w-md text-left text-2xl text-slate-700 dark:text-slate-400">
                     Ancien ingénieur INSA basé à l'île de la Réunion, maintenant spécialisé en développement web
                     FullStack (MERN/PERN), je suis un professionnel autonome, créatif,
                     impliqué, intègre et rigoureux. Je vous accompagne pleinement sur
                     vos projets: <span class="text-purple-800 dark:text-purple-300"> de la mise en place des spécifications fonctionnelles, propositions sur l'UX/UI, création de code performant front/back, tests, au déploiement et à la livraison.</span>
                 </p>
-                <p class="mt-4 max-w-md text-left text-2xl text-slate-700 dark:text-slate-400 sm:text-left">
-                    N'hésitez pas à <a href="#contact" class="hover:opacity-90 underline underline-offset-4">me contacter</a> si vous avez besoin d'un développeur humaniste avec
+                <p class="mt-4 max-w-md text-left text-2xl text-slate-700 dark:text-slate-400">
+                    N'hésitez pas à <a href="#contact" class="hover:opacity-90 underline underline-offset-4">me contacter</a> si vous avez besoin d'un développeur web humaniste avec
                     une forte appétence pour les problématiques métiers, l'excellence et
                     les relations de confiance!
                 </p>
-            </article>
+            </div>
             <img class="w-1/2 animate-bounce-image" src="./img/rocketdab.png" alt="rocket dab" width="400" height="400">
         </section>
 
@@ -279,7 +279,7 @@
             <h2 class="mb-6 text-center text-3xl font-bold text-slate-900 dark:text-white sm:text-5xl">
                 Contactez moi
             </h2>
-            <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
+            <form action="#" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
                 <label for="name">Nom: </label>
                 <input type="text" id="name" required minlength="3" maxlength="60" placeholder="Votre nom"
                     class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl">
@@ -301,16 +301,14 @@
     </main>
 
     <footer id="footer" class="bg-sky-800 text-xl text-white">
-        <section class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
+        <div class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
             <address>
                 Sébastien Gautier, développeur web<br>
                 44 Route de l'Eperon, St Gilles les Hauts<br>
                 97435, la Réunion<br>
-                Email:
-                <a href="mailto:sgautier.dev@gmail.com" class="underline underline-offset-4">sgautier.dev@gmail.com</a><br>
                 Tel: <a href="tel:+262693024555" class="underline underline-offset-4">0693 02 45 55</a>
             </address>
-            <nav class="hidden flex-col gap-2 md:flex" aria-label="bas de page">
+            <nav class="hidden flex-col gap-2 md:flex" aria-label="menu bas de page">
                 <a href="#skills" class="hover:opacity-90">Compétences</a>
                 <a href="#projets" class="hover:opacity-90">Projets</a>
                 <a href="#testimonials" class="hover:opacity-90">Références</a>
@@ -320,7 +318,7 @@
                 <p class="text-right">Copyright &copy; <span id="year"></span></p>
                 <p class="text-right">Tous droits réservés</p>
             </div>
-        </section>
+        </div>
     </footer>
 </body>
 
