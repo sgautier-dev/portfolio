@@ -585,84 +585,12 @@ video {
   right: 0px;
 }
 
-.right-1 {
-  right: 0.25rem;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.-top-2 {
-  top: -0.5rem;
-}
-
-.-top-1 {
-  top: -0.25rem;
-}
-
-.-top-10 {
-  top: -2.5rem;
-}
-
-.bottom-2 {
-  bottom: 0.5rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.right-2 {
-  right: 0.5rem;
-}
-
-.right-20 {
-  right: 5rem;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
 .right-3 {
   right: 0.75rem;
 }
 
-.top-40 {
-  top: 10rem;
-}
-
-.left-9 {
-  left: 2.25rem;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.bottom-40 {
-  bottom: 10rem;
-}
-
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.left-5 {
-  left: 1.25rem;
+.top-20 {
+  top: 5rem;
 }
 
 .z-10 {
@@ -671,18 +599,6 @@ video {
 
 .z-50 {
   z-index: 50;
-}
-
-.-z-0 {
-  z-index: 0;
-}
-
-.z-auto {
-  z-index: auto;
-}
-
-.m-auto {
-  margin: auto;
 }
 
 .mx-auto {
@@ -763,6 +679,10 @@ video {
   width: 100%;
 }
 
+.w-7 {
+  width: 1.75rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -773,38 +693,6 @@ video {
 
 .w-48 {
   width: 12rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .max-w-4xl {
@@ -934,16 +822,8 @@ video {
   flex-wrap: wrap;
 }
 
-.place-content-center {
-  place-content: center;
-}
-
 .place-items-center {
   place-items: center;
-}
-
-.content-center {
-  align-content: center;
 }
 
 .items-center {
@@ -962,16 +842,16 @@ video {
   gap: 2rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -1131,10 +1011,6 @@ video {
 
 .italic {
   font-style: italic;
-}
-
-.leading-5 {
-  line-height: 1.25rem;
 }
 
 .leading-10 {
@@ -1440,56 +1316,6 @@ video {
 .hover\:animate-pulse:hover {
   -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@-webkit-keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.hover\:animate-spin:hover {
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-}
-
-@-webkit-keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.hover\:animate-bounce:hover {
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
 }
 
 .hover\:bg-sky-700:hover {
