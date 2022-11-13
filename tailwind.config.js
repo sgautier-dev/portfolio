@@ -32,11 +32,18 @@ module.exports = {
           '80%': {transform: 'scale(1.2)'},
           '100%': {transform: 'scale(1)'},
         },
+        'tilt-in-top': {
+          '0%': {transform: 'rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg)',
+                opacity: 0 },
+          '100%': {transform: 'rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg)',
+                  opacity: 1 },
+        },
 
       },
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
         'bounce-image': 'bounce-image 0.8s ease-in-out forwards',
+        'tilt-in-top': 'tilt-in-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
       }
     },
   },
