@@ -6,15 +6,16 @@
   <npm run prettier> to organize tailwind elements 
 */
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ['./build/*.html', './build/js/*.js'],
   theme: {
     extend: {
       colors: {
-        papayawhip: {
-          light: '#fef4e4',
-          DEFAULT: '#ffefd5',
-          dark: '#fee5bc',
+        primary: {
+          light: '#0369a1',
+          DEFAULT: '#075985',
+          lighter: '#0284c7',
         }
       },
       screens: {

@@ -12,3 +12,9 @@
         @apply  [&>span::before]:translate-y-0 [&>span::before]:rotate-45 [&>span::after]:translate-y-0 [&>span::after]:-rotate-45 [&>span]:bg-transparent [&>span]:rotate-[-720deg]
     }
 }
+
+@layer base {
+    html {
+      font-family: arial, system-ui, sans-serif;
+    }
+  }
