@@ -635,8 +635,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -693,6 +701,10 @@ video {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .max-w-4xl {
@@ -820,6 +832,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .place-items-center {
