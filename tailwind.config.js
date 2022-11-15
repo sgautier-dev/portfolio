@@ -3,9 +3,31 @@
   init package.json with <npm init -y>
   install prettier for tailwind with <npm i -D prettier-plugin-tailwindcss>
   <npm run tailwind> for building css
-  <npm run prettier> to organize tailwind elements 
+  <npm run prettier> to organize tailwind elements
+  fix "Cannot find module 'tailwindcss' error" with <npm install -D tailwindcss@latest postcss@latest autoprefixer@latest>
+
 */
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin')
+
+const Myclass = plugin(function ({ addUtilities }) {
+  addUtilities({
+    '.cust-rotate-y-180': {
+      transform: 'rotateY(180deg)',
+    },
+    '.cust-perspective': {
+      perspective: '1000px',
+    },
+    '.cust-preserve-3d': {
+      transformStyle: 'preserve-3d',
+    },
+    '.cust-backface-hidden': {
+      backfaceVisibility: 'hidden',
+    },
+
+  })
+})
 
 module.exports = {
   content: ['./build/*.html', './build/js/*.js'],
@@ -24,20 +46,24 @@ module.exports = {
       },
       keyframes: {
         'open-menu': {
-          '0%': {transform: 'scaleY(0)'},
-          '80%': {transform: 'scaleY(1.2)'},
-          '100%': {transform: 'scaleY(1)'},
+          '0%': { transform: 'scaleY(0)' },
+          '80%': { transform: 'scaleY(1.2)' },
+          '100%': { transform: 'scaleY(1)' },
         },
         'bounce-image': {
-          '0%': {transform: 'scale(1)'},
-          '80%': {transform: 'scale(1.2)'},
-          '100%': {transform: 'scale(1)'},
+          '0%': { transform: 'scale(1)' },
+          '80%': { transform: 'scale(1.2)' },
+          '100%': { transform: 'scale(1)' },
         },
         'tilt-in-top': {
-          '0%': {transform: 'rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg)',
-                opacity: 0 },
-          '100%': {transform: 'rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg)',
-                  opacity: 1 },
+          '0%': {
+            transform: 'rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg)',
+            opacity: 0
+          },
+          '100%': {
+            transform: 'rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg)',
+            opacity: 1
+          },
         },
 
       },
@@ -48,5 +74,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [Myclass],
 }
