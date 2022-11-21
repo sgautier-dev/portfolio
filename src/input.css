@@ -3,18 +3,42 @@
 @tailwind utilities;
 
 @layer utilities {
-    .section-min-height{
-        min-height: calc(100vh - 68px); 
-        /* viewport height minus height of the header */
-    }
+	.section-min-height {
+		min-height: calc(100vh - 68px);
+		/* viewport height minus height of the header */
+	}
 
-    .toggle-btn{
-        @apply  [&>span::before]:translate-y-0 [&>span::before]:rotate-45 [&>span::after]:translate-y-0 [&>span::after]:-rotate-45 [&>span]:bg-transparent [&>span]:rotate-[-720deg]
-    }
+	.toggle-btn {
+		@apply [&>span::before]:translate-y-0 [&>span::before]:rotate-45 [&>span::after]:translate-y-0 [&>span::after]:-rotate-45 [&>span]:rotate-[-720deg] [&>span]:bg-transparent;
+	}
 }
 
 @layer base {
-    html {
-      font-family: arial, system-ui, sans-serif;
+	html {
+		font-family: arial, system-ui, sans-serif;
+	}
+	h1 {
+		@apply text-2xl sm:text-3xl;
+	}
+	h2 {
+		@apply text-2xl sm:text-3xl;
+	}
+    h3 {
+		@apply text-xl sm:text-2xl;
+	}
+	p, figcaption {
+		@apply text-lg sm:text-xl;
+	}
+    form {
+		@apply text-xl sm:text-2xl;
+	}
+    article div.card {
+        @apply relative flex flex-col items-center w-3/4 rounded-3xl border-2 border-solid border-slate-900 bg-transparent py-6 px-2 shadow-lg shadow-primary dark:border-gray-100 sm:w-5/12 cursor-pointer  cust-perspective cust-preserve-3d transition duration-1000 ease-in-out;
     }
-  }
+    article div.front {
+        @apply cust-backface-hidden text-center;
+    }
+    article div.back {
+        @apply absolute cust-rotate-y-180 cust-backface-hidden text-center;
+    }
+}

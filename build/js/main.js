@@ -2,9 +2,9 @@ const initApp = () => {
     const hamburgerBtn = document.getElementById('hamburger-button')
     const mobileMenu = document.getElementById('mobile-menu')
     const header = document.getElementsByTagName('header')[0]
-    const cards = document.getElementsByClassName('card')
     const yearSpan = document.getElementById('year')
-
+    const cards = document.getElementsByClassName('card')
+    
     //adding current year to footer
     const today = new Date()
     const year = today.getFullYear()
