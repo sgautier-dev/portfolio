@@ -38,7 +38,18 @@ module.exports = {
           light: '#0369a1',
           DEFAULT: '#075985',
           lighter: '#0284c7',
-        }
+        },
+        secondary: {
+          light: '#9333ea',
+          DEFAULT: '#6b21a8',
+          lighter: '#d8b4fe',
+        },
+        tertiary: {
+          dark: '#0f172a',
+          DEFAULT: '#475569',
+          light: '#94a3b8',
+          lighter: '#e2e8f0'
+        },
       },
       screens: {
         'widescreen': { 'raw': '(min-aspect-ratio: 3/2)' },
