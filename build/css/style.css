@@ -1554,6 +1554,10 @@ ul li {
     display: none;
   }
 
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
