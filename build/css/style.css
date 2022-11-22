@@ -798,6 +798,14 @@ ul li {
   height: 2.5rem;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
