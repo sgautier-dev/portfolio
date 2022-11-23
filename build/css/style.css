@@ -832,10 +832,6 @@ ul li {
   width: 25%;
 }
 
-.w-1\/6 {
-  width: 16.666667%;
-}
-
 .w-1\/3 {
   width: 33.333333%;
 }
@@ -1031,10 +1027,6 @@ ul li {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-6 {
@@ -1509,8 +1501,8 @@ ul li {
     width: 2rem;
   }
 
-  .sm\:w-1\/3 {
-    width: 33.333333%;
+  .sm\:w-1\/4 {
+    width: 25%;
   }
 
   .sm\:flex-row {
@@ -1535,10 +1527,6 @@ ul li {
 
   .sm\:p-4 {
     padding: 1rem;
-  }
-
-  .sm\:p-3 {
-    padding: 0.75rem;
   }
 
   .sm\:text-left {
