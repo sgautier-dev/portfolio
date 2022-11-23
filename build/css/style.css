@@ -832,6 +832,14 @@ ul li {
   width: 25%;
 }
 
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1497,6 +1505,10 @@ ul li {
     width: 2rem;
   }
 
+  .sm\:w-1\/3 {
+    width: 33.333333%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1519,6 +1531,10 @@ ul li {
 
   .sm\:p-4 {
     padding: 1rem;
+  }
+
+  .sm\:p-3 {
+    padding: 0.75rem;
   }
 
   .sm\:text-left {
