@@ -25,7 +25,7 @@ const initApp = () => {
     const scrollTrigger = 60;
 
     document.addEventListener('scroll', (e) => {
-        window.scrollY >= scrollTrigger ? header.classList.add('opacity-90') : header.classList.remove('opacity-90')
+        window.scrollY >= scrollTrigger ? header.classList.add('bg-primary/80', 'backdrop-blur-sm') : header.classList.remove('bg-primary/80', 'backdrop-blur-sm')
     })
 
     //adding flipping rotation on cards on click
