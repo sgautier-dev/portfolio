@@ -840,6 +840,10 @@ ul li {
   width: 33.333333%;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
