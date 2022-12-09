@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./favicon.ico">
     <script src="js/main.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer>
+    </script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -760,7 +762,7 @@
                 <textarea name="message" id="message" name="message" cols="30" rows="5" placeholder="Votre message" required
                     class="w-full rounded-xl border border-solid border-tertiary-dark p-3 text-black dark:border-none"></textarea>
                 <button
-                    class="w-1/3 rounded-xl border border-solid border-tertiary-dark bg-primary p-3 text-white text-center hover:bg-primary-light active:bg-primary-lighter dark:border-none m-auto sm:w-1/4">
+                    class="w-1/3 rounded-xl border border-solid border-tertiary-dark bg-primary p-3 text-white text-center hover:bg-primary-light active:bg-primary-lighter dark:border-none m-auto sm:w-1/4" id="submitButton">
                     Envoyer
                 </button>
             </form>
@@ -788,13 +790,5 @@
         </div>
     </footer>
 </body>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-    (function () {
-        emailjs.init("qxxzJq5vCOVNRww2i");
-    })();
-</script>
 
 </html>

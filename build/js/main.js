@@ -34,26 +34,40 @@ const initApp = () => {
             element.classList.toggle('cust-rotate-y-180')
         })
     })
+
+    //init emailjs (with sendgrid)
+    const initEmail = () => {
+        emailjs.init("qxxzJq5vCOVNRww2i");
+    }
+
+    initEmail()
+
+    const contactForm = document.getElementById('contactForm')
+    const submitButton = document.getElementById('submitButton')
+
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault()
+
+        submitButton.disabled = true
+        
+        const serviceID = "service_86j0nfr"
+        const templateID = "template_dx7svpf"
+
+        // sending the email
+        emailjs.sendForm(serviceID, templateID, this).then(
+            (response) => {
+                contactForm.reset()
+                submitButton.disabled = false
+                alert("Votre message a bien été envoyé!")
+            },
+            (error) => {
+                submitButton.disabled = false
+                alert("Erreur...", error)
+            }
+        )
+    })
 }
 
 document.addEventListener('DOMContentLoaded', initApp)
 
-const contactForm = document.getElementById("contactForm")
 
-contactForm.addEventListener("submit", function (event) {
-    event.preventDefault()
-
-    const serviceID = "service_86j0nfr"
-    const templateID = "template_dx7svpf"
-
-    // sending the email
-    emailjs.sendForm(serviceID, templateID, this).then(
-        (response) => {
-            contactForm.reset()
-            alert("Votre message a bien été envoyé!")
-        },
-        (error) => {
-            alert("Erreur...", error)
-        }
-    )
-})
