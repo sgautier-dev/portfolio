@@ -420,10 +420,10 @@
 
                 <div class="card">
 
-                    <picture class="mb-4 w-2/3 cust-backface-hidden">
+                    <picture class="pb-1 cust-backface-hidden">
                         <source type="image/webp" srcset="./img/grouponet_portfolio_sgautier-800x570.webp">
-                        <img src="./img/grouponet_portfolio_sgautier-800x570.png" class="rounded-md"
-                            alt="Projet Réseau Social Sébastien Gautier" width="800" height="655" loading="lazy">
+                        <img src="./img/grouponet_portfolio_sgautier-800x570.png" class="rounded-t-2xl"
+                            alt="Projet Réseau Social Sébastien Gautier" width="800" height="570" loading="lazy">
                     </picture>
 
                     <div class="front">
@@ -507,10 +507,10 @@
                         <h3 class=" text-xl text-tertiary-dark dark:text-white md:text-2xl">
                             GroupoNet
                         </h3>
-                        <p class="m-2 text-justify text-tertiary dark:text-tertiary-light text-base md:text-lg ">
+                        <p class="m-2 text-justify text-tertiary dark:text-tertiary-light text-base md:text-lg">
                             Projet fullstack (MERN) de fin de formation. Un réseau social d'entreprise avec connection
                             sécurisée et
-                            persistante, accès par rôle utilisateur, création/édition de post et système de likes.
+                            persistante, accès par rôle utilisateur, création de posts et système de likes.
                         </p>
 
                         <!-- <p class="m-2 text-justify text-lg text-tertiary dark:text-tertiary-light sm:hidden">
@@ -543,10 +543,10 @@
 
                 <div class="card">
 
-                    <picture class="mb-4 w-2/3 cust-backface-hidden">
+                    <picture class="pb-1 cust-backface-hidden">
                         <source type="image/webp" srcset="./img/portfolio_sgautier-800x570.webp">
                         <img src="./img/portfolio_sgautier-800x570.png" alt="Projet Portfolio Sébastien Gautier"
-                            class="rounded-md" width="884" height="884" loading="lazy">
+                            class="rounded-t-2xl" width="800" height="570" loading="lazy">
                     </picture>
 
                     <div class="front">
@@ -618,10 +618,10 @@
 
                 <div class="card">
 
-                    <picture class="mb-4 w-2/3 cust-backface-hidden">
+                    <picture class="pb-1 cust-backface-hidden">
                         <source type="image/webp" srcset="./img/overview_portfolio_sgautier-800x570.webp">
                         <img src="./img/overview_portfolio_sgautier-800x570.png" alt="Projet Overview Sébastien Gautier"
-                            class="rounded-md" width="800" height="570" loading="lazy">
+                            class="rounded-t-2xl" width="800" height="570" loading="lazy">
                     </picture>
 
                     <div class="front">
@@ -746,18 +746,18 @@
             <h2 class="mb-6 text-center font-bold text-tertiary-dark dark:text-white">
                 Contactez-moi
             </h2>
-            <form action="#" class="items-left mx-auto flex max-w-4xl flex-col gap-4">
+            <form id="contactForm" class="items-left mx-auto flex max-w-4xl flex-col gap-4">
                 <label for="name">Nom: </label>
-                <input type="text" id="name" required minlength="3" maxlength="60" placeholder="Votre nom"
+                <input type="text" id="name" name="name" required minlength="3" maxlength="60" placeholder="Votre nom"
                     class="w-full rounded-xl border border-solid border-tertiary-dark p-3 text-black dark:border-none">
                 <label for="email">Email: </label>
-                <input type="email" id="email" required minlength="3" maxlength="60" placeholder="Votre email"
+                <input type="email" id="email" name="email" required minlength="3" maxlength="60" placeholder="Votre email"
                     class="w-full rounded-xl border border-solid border-tertiary-dark p-3 text-black dark:border-none">
                 <!-- <label for="subject">Objet: </label>
                 <input type="text" id="subject" required minlength="3" maxlength="60" placeholder="Sujet du message"
                     class="w-full rounded-xl border border-solid border-tertiary-dark p-3 text-black dark:border-none"> -->
                 <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Votre message" required
+                <textarea name="message" id="message" name="message" cols="30" rows="5" placeholder="Votre message" required
                     class="w-full rounded-xl border border-solid border-tertiary-dark p-3 text-black dark:border-none"></textarea>
                 <button
                     class="w-1/3 rounded-xl border border-solid border-tertiary-dark bg-primary p-3 text-white text-center hover:bg-primary-light active:bg-primary-lighter dark:border-none m-auto sm:w-1/4">
@@ -788,5 +788,13 @@
         </div>
     </footer>
 </body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("qxxzJq5vCOVNRww2i");
+    })();
+</script>
 
 </html>

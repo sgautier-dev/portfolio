@@ -4,7 +4,7 @@ const initApp = () => {
     const header = document.getElementsByTagName('header')[0]
     const yearSpan = document.getElementById('year')
     const cards = document.getElementsByClassName('card')
-    
+
     //adding current year to footer
     const today = new Date()
     const year = today.getFullYear()
@@ -37,3 +37,23 @@ const initApp = () => {
 }
 
 document.addEventListener('DOMContentLoaded', initApp)
+
+const contactForm = document.getElementById("contactForm")
+
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault()
+
+    const serviceID = "service_86j0nfr"
+    const templateID = "template_dx7svpf"
+
+    // sending the email
+    emailjs.sendForm(serviceID, templateID, this).then(
+        (response) => {
+            contactForm.reset()
+            alert("Votre message a bien été envoyé!")
+        },
+        (error) => {
+            alert("Erreur...", error)
+        }
+    )
+})
