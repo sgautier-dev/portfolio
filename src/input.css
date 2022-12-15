@@ -44,4 +44,15 @@
 	ul li {
 		@apply rounded-3xl border border-solid border-tertiary-dark bg-white py-2 px-2 md:py-4 md:px-4 shadow-md shadow-tertiary-light dark:shadow-secondary-lighter dark:border-tertiary-lighter dark:bg-black;
 	}
+
+	.hero-image {
+		-webkit-mask-image: url('../img/AsianDeveloper-black.svg');
+		mask-image: url('../img/AsianDeveloper-black.svg');
+		-webkit-mask-size: contain;
+		mask-size: contain;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		-webkit-mask-position: center;
+		mask-position: center;
+	}
 }

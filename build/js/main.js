@@ -9,7 +9,9 @@ const initApp = () => {
     const today = new Date()
     const year = today.getFullYear()
 
-    yearSpan.innerText = year
+    yearSpan.setAttribute("datetime", year)
+    yearSpan.textContent = year
+    //yearSpan.innerText = year
 
     //toggling menu on click
     const toggleMenu = () => {
