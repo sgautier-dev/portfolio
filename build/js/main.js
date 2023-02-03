@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const initApp = () => {
     const hamburgerBtn = document.getElementById('hamburger-button')
     const mobileMenu = document.getElementById('mobile-menu')
@@ -39,7 +41,7 @@ const initApp = () => {
 
     //init emailjs (with sendgrid)
     const initEmail = () => {
-        emailjs.init("qxxzJq5vCOVNRww2i");
+        emailjs.init(process.env.EMAIL_PUBLIC_KEY);
     }
 
     initEmail()
@@ -52,8 +54,8 @@ const initApp = () => {
 
         submitButton.disabled = true
         
-        const serviceID = "service_86j0nfr"
-        const templateID = "template_dx7svpf"
+        const serviceID = process.env.EMAIL_SERVICE_ID
+        const templateID = process.env.EMAIL_TEMPLATE_ID
 
         // sending the email
         emailjs.sendForm(serviceID, templateID, this).then(
