@@ -1,4 +1,3 @@
-import env from "../env.js";
 
 const initApp = () => {
   const hamburgerBtn = document.getElementById('hamburger-button')
