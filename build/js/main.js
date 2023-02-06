@@ -77,7 +77,7 @@ const initApp = () => {
                 throw new Error("Failed to send email");
             }
 
-            const result = await response.json();
+            //const result = await response.json();
             //console.log(result);
             contactForm.reset()
             submitButton.disabled = false
