@@ -47,6 +47,7 @@ const initApp = () => {
 
     const contactForm = document.getElementById('contactForm')
     const submitButton = document.getElementById('submitButton')
+    const environment = 'production'
 
     contactForm.addEventListener("submit", async (event) => {
         event.preventDefault()
@@ -65,7 +66,7 @@ const initApp = () => {
 
         // Send request to API
         try {
-            const response = await fetch(`${env.NODE_ENV === "production" ? "https://sendemailapi-se49.onrender.com" : "http://localhost:3500"}/sendEmail`, {
+            const response = await fetch(`${environment === "production" ? "https://sendemailapi-se49.onrender.com" : "http://localhost:3500"}/sendEmail`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
