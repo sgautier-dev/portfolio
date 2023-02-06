@@ -39,7 +39,7 @@
         @apply cust-backface-hidden text-center;
     }
     article div.back {
-        @apply absolute cust-rotate-y-180 cust-backface-hidden text-center;
+        @apply absolute cust-rotate-y-180 cust-backface-hidden text-center ;
     }
 	ul li {
 		@apply rounded-3xl border border-solid border-tertiary-dark bg-white py-2 px-2 md:py-4 md:px-4 shadow-md shadow-tertiary-light dark:shadow-tertiary-lighter dark:border-tertiary-lighter dark:bg-black;
