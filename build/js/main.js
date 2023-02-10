@@ -53,6 +53,13 @@ const initApp = () => {
 
         event.preventDefault()
 
+        const response = grecaptcha.getResponse();
+        if (response.length == 0) {
+            //reCaptcha not verified
+            alert("Veuillez vérifier que vous êtes humain!");
+            return false;
+        }
+
         submitButton.disabled = true
 
         // const serviceID = env.EMAIL_SERVICE_ID
