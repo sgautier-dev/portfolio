@@ -50,6 +50,7 @@ const initApp = () => {
     const environment = 'production'
 
     contactForm.addEventListener("submit", async (event) => {
+
         event.preventDefault()
 
         submitButton.disabled = true
@@ -66,6 +67,7 @@ const initApp = () => {
 
         // Send request to API
         try {
+
             const response = await fetch(`${environment === "production" ? "https://sendemailapi-se49.onrender.com" : "http://localhost:3500"}/sendEmail`, {
                 method: "POST",
                 headers: {
