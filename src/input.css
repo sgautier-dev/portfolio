@@ -33,7 +33,7 @@
 		@apply text-xl sm:text-2xl;
 	}
     article div.card {
-        @apply relative flex flex-col items-center w-3/4 rounded-2xl pb-4 border-2 border-solid border-tertiary-dark bg-transparent shadow-md shadow-tertiary-light dark:shadow-tertiary-lighter dark:border-tertiary-lighter sm:w-5/12 cursor-pointer cust-perspective cust-preserve-3d transition-transform duration-1000 ease-in-out;
+        @apply relative flex flex-col items-center w-96 h-auto rounded-2xl pb-4 border-2 border-solid border-tertiary-dark bg-transparent shadow-md shadow-tertiary-light dark:shadow-tertiary-lighter dark:border-tertiary-lighter sm:w-5/12 cursor-pointer cust-perspective cust-preserve-3d transition-transform duration-1000 ease-in-out;
     }
     article div.front {
         @apply cust-backface-hidden text-center;
