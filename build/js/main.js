@@ -1,10 +1,10 @@
 
 const initApp = () => {
-    const hamburgerBtn = document.getElementById('hamburger-button')
-    const mobileMenu = document.getElementById('mobile-menu')
-    const header = document.getElementsByTagName('header')[0]
-    const yearSpan = document.getElementById('year')
-    const cards = document.getElementsByClassName('card')
+    const hamburgerBtn = document.querySelector('#hamburger-button')
+    const mobileMenu = document.querySelector('#mobile-menu')
+    const header = document.querySelector('header')
+    const yearSpan = document.querySelector('#year')
+    const cards = document.querySelectorAll('.card')
 
     //adding current year to footer
     const today = new Date()
